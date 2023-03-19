@@ -281,12 +281,27 @@ a {
 }
 
 .box-bd ul li {
+    position: relative;
     float: left;
     width: 228px;
     height: 270px;
     background-color: #fff;
     margin-right: 15px;
     margin-bottom: 15px;
+}
+
+
+.box-bd ul li em {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.box-bd ul li em .new-icon {
+    font-size: 20px;
+    color: pink;
+    border: 1px dotted pink;
+    padding: 2px 10px;
 }
 
 .box-bd ul li img {
