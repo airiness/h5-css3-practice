@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Promo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .scroll-promo {
+            position: relative;
+            margin: 0 auto;
+            width: 820px;
+            height: 1020px;
+            background-color: pink;
+        }
+
+        .scroll-promo img {
+            width: 820px;
+            height: 1020px;
+        }
+
+        .next,
+        .prev {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            border-radius: 0 15px 15px 0;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 7px;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+        .promo-nav .selected {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-promo">
+        <img src="https://source.unsplash.com/random" alt="">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <div class="promo-nav">
+            <ul>
+                <li class="selected"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
