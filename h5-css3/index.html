@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h5 label & css3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        nav {
+            height: 120px;
+            background-color: yellow;
+            border-radius: 15px;
+            width: 800px;
+            margin: 15px auto;
+        }
+
+        .section-test {
+            width: 500px;
+            height: 300px;
+            background-color: skyblue;
+            border-radius: 15px;
+        }
+
+        .selector input[value] {
+            color: pink;
+        }
+
+        .selector-2 input[type=text] {
+            color: pink;
+        }
+
+        .selector-3 div[class^=icon] {
+            color: red;
+        }
+
+        .selector-3 div:nth-child(4) {
+            color: green;
+        }
+
+        .selector-4 section[class$=data] {
+            color: aqua;
+        }
+
+        .selector-3 div.icon-1 {
+            color: blueviolet;
+        }
+
+        .selector-5 ul li:first-child {
+            background-color: goldenrod;
+        }
+
+        .selector-5 :nth-child(2) {
+            /* even odd */
+            /* formula: n, 2n ,2n+1, 5n, n+3 ... */
+            background-color: salmon;
+        }
+
+        .selector-6 ol li:nth-of-type(4) {
+            background-color: green;
+        }
+
+        .selector-7::before {
+            content: 'I';
+        }
+
+        .selector-7::after {
+            content: 'Handsome Jack';
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <section class="section-test">Section</section>
+    <video controls="controls" autoplay="autoplay" muted="muted" loop="loop" src="" poster=""></video>
+    <audio src=""></audio>
+
+    <div class="selector">
+        <input type="text" value="hello world">
+        <input type="text">
+    </div>
+
+    <div class="selector-2">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+    </div>
+
+    <div class="selector-3">
+        <div class="icon-1">icon-1</div>
+        <div class="icon-2">icon-2</div>
+        <div class="icon-3">icon-3</div>
+        <div class="icon-4">icon-4</div>
+    </div>
+
+    <div class="selector-4">
+        <section class="icon1-data">I'm Tanaka</section>
+        <section class="icon2-data">I'm Okegawa</section>
+        <section class="icon3-ico">Who am I ?Sakura</section>
+    </div>
+
+    <div class="selector-5">
+        <ul>
+            <li>1who am i and where am i</li>
+            <li>2who am i and where am i</li>
+            <li>3who am i and where am i</li>
+            <li>4who am i and where am i</li>
+            <li>5who am i and where am i</li>
+            <li>6who am i and where am i</li>
+            <li>7who am i and where am i</li>
+            <li>8who am i and where am i</li>
+        </ul>
+    </div>
+    <div class="selector-6">
+        <ol>
+            <li>1- Lorem ipsum dolor sit amet.</li>
+            <li>2- Lorem ipsum dolor sit amet.</li>
+            <li>3- Lorem ipsum dolor sit amet.</li>
+            <li>4- Lorem ipsum dolor sit amet.</li>
+            <li>5- Lorem ipsum dolor sit amet.</li>
+            <li>6- Lorem ipsum dolor sit amet.</li>
+            <li>7- Lorem ipsum dolor sit amet.</li>
+            <li>8- Lorem ipsum dolor sit amet.</li>
+        </ol>
+    </div>
+
+    <div class="selector-7">
+        am
+    </div>
+</body>
+
+</html>
