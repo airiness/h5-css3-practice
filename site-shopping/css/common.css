@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../fonts/icomoon.eot?uwcobu');
+    src: url('../../fonts/icomoon.eot?uwcobu#iefix') format('embedded-opentype'),
+        url('../../fonts/icomoon.ttf?uwcobu') format('truetype'),
+        url('../../fonts/icomoon.woff?uwcobu') format('woff'),
+        url('../../fonts/icomoon.svg?uwcobu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: red;
+}
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon:after {
+    content: "";
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
