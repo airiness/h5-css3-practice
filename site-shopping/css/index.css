@@ -1,0 +1,238 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 225px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+}
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.main .focus img {
+    width: 721px;
+    height: 455px;
+}
+
+.newsflash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.newsflash .news .news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.newsflash .news .news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.newsflash .news .news-hd .more {
+    float: right
+}
+
+.newsflash .news .news-hd .more::after {
+    content: '';
+    font-family: 'icomoon';
+}
+
+.newsflash .life-service {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.newsflash .life-service ul {
+    width: 252px;
+}
+
+.newsflash .life-service ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.newsflash .life-service ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.svg) no-repeat 1px;
+    background-size: auto 100%;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+.newsflash .bargain img {
+    width: 100%;
+    height: 76px;
+}
+
+.newsflash .news-bd {
+    padding: 5px 15px 0;
+}
+
+.newsflash .news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recommand {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+
+.recommand-hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recommand-hd img {
+    width: 100%;
+    height: 60%;
+}
+
+.recommand-hd p {
+    color: #fff;
+    padding-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.recommand-bd {
+    float: left;
+}
+
+.recommand-bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recommand-bd ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.recommand-bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+/* floor  appliances*/
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab-list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab-list ul li {
+    float: left;
+}
+
+.tab-list ul li a {
+    margin: 0 15px;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.tab-list-item>div {
+    float: left;
+    height: 361px;
+}
+
+.col-210 {
+    text-align: center;
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.col-210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-left: 10px;
+}
+
+.col-210 ul {
+    padding-left: 12px;
+}
+
+.col-329 img,
+.col-221 img,
+.col-219 img,
+.col-210 img {
+    width: 100%;
+}
+
+.col-221 img {
+    height: 100%;
+}
+
+.col-329 {
+    width: 329px;
+}
+
+.col-221 {
+    width: 221px;
+    border-right: 1px solid gray;
+}
+
+.col-219 {
+    width: 219px;
+}
+
+.bb {
+    display: block;
+    border-bottom: 1px solid gray;
+}
