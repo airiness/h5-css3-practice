@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav 3d</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            float: left;
+            margin: 100px;
+            padding: 20px 20px;
+            background-color: #ccc;
+        }
+
+        ul li {
+            float: left;
+            width: 200px;
+            height: 35px;
+            perspective: 300px;
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.8s;
+        }
+
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+
+        .front,
+        .bottom {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            line-height: 35px;
+            text-align: center;
+            color: yellow;
+        }
+
+        .front {
+            background-color: green;
+            transform: translateZ(18px);
+        }
+
+        .bottom {
+            background-color: red;
+            transform: translateY(17.5px) rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">Graphics Programmer</div>
+                <div class="bottom">Javascript Programmer</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">Graphics Programmer</div>
+                <div class="bottom">Javascript Programmer</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">Graphics Programmer</div>
+                <div class="bottom">Javascript Programmer</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">Graphics Programmer</div>
+                <div class="bottom">Javascript Programmer</div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+
+</html>
