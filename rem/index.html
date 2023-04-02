@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rem</title>
+    <style>
+      html {
+        font-size: 14px;
+      }
+      div {
+        font-size: 12px;
+      }
+      p {
+        /* width: 10em; */
+        /* height: 10em; */
+        width: 10rem;
+        height: 10rem;
+        background-color: purple;
+      }
+
+      @media screen and (max-width: 800px) {
+        body {
+          background-color: yellow;
+        }
+      }
+
+      @media screen and (max-width: 539px) {
+        body {
+          background-color: blue;
+        }
+      }
+
+      @media screen and (min-width: 540px) and (max-width: 969px) {
+        body {
+          background-color: green;
+        }
+      }
+
+      @media screen and (min-width: 970px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media screen and (min-width: 320px) {
+        html {
+          font-size: 50px;
+        }
+      }
+
+      @media screen and (min-width: 640px) {
+        html {
+          font-size: 100px;
+        }
+      }
+
+      .top {
+        height: 1rem;
+        font-size: 0.5rem;
+        background-color: burlywood;
+        color: #fff;
+        text-align: center;
+        line-height: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p></p>
+    </div>
+
+    <div class="top">Hello World</div>
+  </body>
+</html>
