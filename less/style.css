@@ -1,0 +1,28 @@
+body {
+  background-color: pink;
+}
+div {
+  color: pink;
+  font-size: 14px;
+}
+a {
+  font-size: 14px;
+}
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+.header a {
+  color: red;
+}
+.nav .logo {
+  color: green;
+}
+a:hover {
+  color: pink;
+}
+.nav::before {
+  content: "";
+  background-color: pink;
+}

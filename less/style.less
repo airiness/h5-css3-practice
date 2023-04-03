@@ -1,0 +1,43 @@
+@color: pink;
+@font14: 14px;
+body {
+  background-color: @color;
+}
+
+div {
+  color: @color;
+  font-size: @font14;
+}
+
+a {
+  font-size: @font14;
+}
+
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: @color;
+
+  a {
+    color: red;
+  }
+}
+
+.nav {
+  .logo {
+    color: green;
+  }
+}
+
+a {
+  &:hover {
+    color: @color;
+  }
+}
+
+.nav {
+  &::before {
+    content: "";
+    background-color: @color;
+  }
+}
