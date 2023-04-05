@@ -94,7 +94,7 @@ a {
   font-size: 0.5rem;
   padding-top: 0.2rem;
   padding-left: 1.1rem;
-  color: red;
+  color: #757575;
 }
 .login {
   width: 1.5rem;
@@ -104,4 +104,40 @@ a {
   font-size: 0.5rem;
   text-align: center;
   color: #fff;
+}
+.banner {
+  width: 15rem;
+  height: 7.36rem;
+}
+.banner img {
+  width: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a {
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+nav {
+  width: 15rem;
+}
+nav a {
+  float: left;
+  width: 3rem;
+  height: 2.8rem;
+  text-align: center;
+}
+nav a img {
+  display: block;
+  width: 1.64rem;
+  height: 1.64rem;
+  margin: 0.2rem auto 0;
+}
+nav a span {
+  display: block;
+  font-size: 0.5rem;
+  color: #333;
 }

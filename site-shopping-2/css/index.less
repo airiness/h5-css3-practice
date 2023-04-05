@@ -75,7 +75,7 @@ a {
         font-size: (25rem / @baseFont);
         padding-top: (10rem / @baseFont);
         padding-left: (55rem / @baseFont);
-        color: red;
+        color: #757575;
     }
 }
 
@@ -87,4 +87,45 @@ a {
     font-size: (25rem / @baseFont);
     text-align: center;
     color: #fff;
+}
+
+// banner
+.banner {
+    width: (750rem / @baseFont);
+    height: (368rem / @baseFont);
+    img {
+        width: 100%;
+    }
+}
+
+// ad
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+nav {
+    width: (750rem / @baseFont);
+    a {
+        float: left;
+        width: (150rem / @baseFont);
+        height: (140rem / @baseFont);
+        text-align: center;
+        img {
+            display: block;
+            width: (82rem / @baseFont);
+            height: (82rem / @baseFont);
+            margin: (10rem / @baseFont) auto 0;
+        }
+        span {
+            display: block;
+            font-size: (25rem / @baseFont);
+            color: #333;
+        }
+    }
 }
