@@ -1,0 +1,199 @@
+@baseSize: 3.75vmin;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.suspension {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.53333vmin 2.66666vmin rgb(0 0 0 / 20%);
+    z-index: 9;
+    .m-navbar {
+        padding: 0 (12 / @baseSize) 0 (18 / @baseSize);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: (44 / @baseSize);
+        .logo {
+            i {
+                font-size: (24 / @baseSize);
+                color: palevioletred;
+            }
+        }
+
+        .right {
+            display: flex;
+            .search {
+                i {
+                    font-size: (24 / @baseSize);
+                    color: palevioletred;
+                }
+            }
+
+            .profile {
+                overflow: hidden;
+                width: (24 / @baseSize);
+                height: (24 / @baseSize);
+                border-radius: 50%;
+                margin: 0 (20 / @baseSize);
+                img {
+                    width: 100%;
+                }
+            }
+
+            .app-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: (100 / @baseSize);
+                height: (24 / @baseSize);
+                background-color: pink;
+                box-sizing: border-box;
+                border: 2px solid palevioletred;
+                border-radius: 5px;
+                color: #fff;
+                font-size: (12 / @baseSize);
+            }
+        }
+    }
+
+    .channel-menu {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: (40 / @baseSize);
+        color: palevioletred;
+        border-bottom: 1px solid #ccc;
+        .tabs {
+            flex: 1;
+            overflow: hidden;
+            .tab-list {
+                display: flex;
+                a {
+                    padding: 0 (16 / @baseSize);
+                    font-size: (14 / @baseSize);
+                    white-space: nowrap;
+                    color: palevioletred;
+                    height: (40 / @baseSize);
+                    line-height: (40 / @baseSize);
+                }
+
+                .line {
+                    position: absolute;
+                    left: (16 / @baseSize);
+                    bottom: 0;
+                    width: (28 / @baseSize);
+                    height: (2 / @baseSize);
+                    background-color: palevioletred;
+                }
+            }
+        }
+
+        .after {
+            position: relative;
+            width: (40 / @baseSize);
+            height: (40 / @baseSize);
+            text-align: center;
+            line-height: (40 / @baseSize);
+            i {
+                font-size: (20 / @baseSize);
+            }
+        }
+    }
+}
+
+.m-home {
+    padding: (80 / @baseSize) (5 / @baseSize) 0;
+    .video-list {
+        display: flex;
+        flex-wrap: wrap;
+        .video-item {
+            width: 50%;
+            height: 100%;
+            // height: (150 / @baseSize);
+            padding: (8 / @baseSize) (5 / @baseSize);
+            .card {
+                position: relative;
+                // height: (97 / @baseSize);
+                .count {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: (27 / @baseSize);
+                    line-height: (27 / @baseSize);
+                    padding: 0 (5 / @baseSize);
+                    font-size: (12 / @baseSize);
+                    color: #fff;
+                    background-image: linear-gradient(180deg, transparent, hsla(340, 82%, 55%, 0.24));
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .title {
+                font-size: (12 / @baseSize);
+            }
+        }
+    }
+}
+
+.app {
+    position: fixed;
+    left: 0;
+    bottom: (30 / @baseSize);
+    width: 100%;
+    height: (38 / @baseSize);
+    .btn-app {
+        margin: 0 (10 / @baseSize);
+        height: (38 / @baseSize);
+        background-color: palevioletred;
+        border-radius: (19 / @baseSize);
+        line-height: (38 / @baseSize);
+        text-align: center;
+        border: 1px solid rgb(234, 113, 154);
+        a {
+            color: #fff;
+        }
+        box-shadow: 0 0.53333vmin 2.66666vmin rgb(0 0 0 / 20%);
+    }
+}
